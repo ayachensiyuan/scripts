@@ -1,0 +1,6 @@
+#!/bin/bash
+mkdir teamsfx && cd teamsfx
+git init
+git remote add origin https://github.com/OfficeDev/TeamsFx
+git fetch origin dev
+git checkout --progress --force -B ivanchen/perf-test refs/remotes/origin/dev
